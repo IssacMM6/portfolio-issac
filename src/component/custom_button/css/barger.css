@@ -1,0 +1,35 @@
+.barger-btn {
+  --w-h-value: 35px;
+  width: var(--w-h-value);
+  height: var(--w-h-value);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.barger-btn div {
+  height: 14%;
+  width: 100%;
+  background-color: black;
+}
+
+.barger-btn div:nth-child(2),
+.barger-btn div:nth-child(3) {
+  width: 70%;
+}
+
+.bb-btn-open {
+  align-items: center;
+  transform: rotate(90deg);
+}
+
+.bb-btn-open div {
+  opacity: 0;
+}
+
+.barger-btn div:nth-child(2),
+.barger-btn div:nth-child(3) {
+  opacity: 1;
+}

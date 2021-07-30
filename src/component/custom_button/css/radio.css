@@ -1,0 +1,53 @@
+.radio-btn {
+  --radio-btn: 20px;
+  width: var(--radio-btn);
+  height: var(--radio-btn);
+  background-color: white;
+  border: 2px solid black;
+  border-radius: var(--radio-btn);
+  padding-top: 5px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-switch {
+  --radio-select-btn: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--radio-select-btn);
+  height: var(--radio-select-btn);
+  border-radius: var(--radio-select-btn);
+  background-color: black;
+}
+.radio-switch-on {
+  background-color: black;
+}
+.radio-switch-off {
+  background-color: white;
+}
+
+.radio-group {
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 180.447px;
+  width: min-content;
+}
+
+.home-btn {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+.home-btn-on .home-path {
+  fill: rgb(0, 0, 0);
+}
+
+.home-btn-off .home-path {
+  fill: rgb(134, 134, 134);
+}

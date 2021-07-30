@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import React from "react";
+import LandingPage from "./component/Pages/landing_page";
+import LogoButton from "./component/custom_button/logo_btn";
+import BargerButton from "./component/custom_button/barger_btn";
 function App() {
+  const [bargerClick, setBargerClick] = React.useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <nav>
+        <div>
+          <LogoButton />
+          <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contact</li>
+          </ul>
+          <BargerButton
+            selected={bargerClick}
+            onClick={(s) => setBargerClick(s)}
+          />
+        </div>
+      </nav>
+      <LandingPage />
     </div>
   );
 }
