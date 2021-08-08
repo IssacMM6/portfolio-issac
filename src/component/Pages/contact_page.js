@@ -55,40 +55,38 @@ function ContactPage() {
           You can follow me , By clicking the link :
           <br />
           <br />
-          <a href="#" className="link-dark un-line">
+          <a
+            href="https://www.facebook.com/profile.php?id=100054497664282"
+            className="link-dark un-line"
+          >
             . Facebook
           </a>
           <a
             href="https://www.facebook.com/profile.php?id=100054497664282"
-            target="_blank"
             className="link-dark un-line"
           >
             . Instragram
           </a>
           <a
             href="https://www.facebook.com/profile.php?id=100054497664282"
-            target="_blank"
             className="link-dark un-line"
           >
             . Discord
           </a>
           <a
             href="https://www.facebook.com/profile.php?id=100054497664282"
-            target="_blank"
             className="link-dark un-line"
           >
             . LinkIn
           </a>
           <a
             href="https://www.facebook.com/profile.php?id=100054497664282"
-            target="_blank"
             className="link-dark un-line"
           >
             . GitHub
           </a>
           <a
             href="https://www.facebook.com/profile.php?id=100054497664282"
-            target="_blank"
             className="link-dark un-line"
           >
             . Pinterest
