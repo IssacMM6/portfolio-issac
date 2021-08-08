@@ -1,6 +1,5 @@
 import React from "react";
 import RadioButton from "./radio_btn";
-import HomeButton from "./home_btn";
 import "./css/radio.css";
 
 class RadioButtonGroup extends React.Component {
@@ -8,32 +7,26 @@ class RadioButtonGroup extends React.Component {
     super(props);
     this.state = {
       home: true,
-      story: false,
-      skill: false,
+      service: false,
       contact: false,
     };
-    this.HomeRadioBtnHandle = (e) => {
+
+    this.homeRadioBtnHandle = (e) => {
       if (this.state.home !== true) {
-        this.setState({ home: e, story: false, skill: false, contact: false });
+        this.setState({ home:true,service:false,contact:false});
         this.props.currentTarget(0);
       }
     };
-    this.storyRadioBtnHandle = (e) => {
-      if (this.state.story !== true) {
-        this.setState({ story: e, skill: false, contact: false, home: false });
+    this.serviceRadioBtnHandle = (e) => {
+      if (this.state.service !== true) {
+        this.setState({  home:false,service:true,contact:false});
         this.props.currentTarget(1);
-      }
-    };
-    this.skillRadioBtnHandle = (e) => {
-      if (this.state.skill !== true) {
-        this.setState({ skill: e, story: false, contact: false, home: false });
-        this.props.currentTarget(2);
       }
     };
     this.contactRadioBtnHandle = (e) => {
       if (this.state.contact !== true) {
-        this.setState({ contact: e, story: false, skill: false, home: false });
-        this.props.currentTarget(3);
+        this.setState({ home:false,service:false,contact:true });
+        this.props.currentTarget(2);
       }
     };
   }
@@ -44,26 +37,29 @@ class RadioButtonGroup extends React.Component {
 
   render() {
     const cName = this.props.cName;
+    const refHome = this.props.refHome;
+    const refService = this.props.refService;
+    const refContact = this.props.refContact;
     return (
       <div className={`radio-group ${cName}`}>
-        <HomeButton
+        <RadioButton
           selected={this.state.home}
-          onClick={this.HomeRadioBtnHandle}
+          onClick={this.homeRadioBtnHandle}
+          refit={refHome}
         />
         <RadioButton
-          selected={this.state.story}
-          onClick={this.storyRadioBtnHandle}
-        />
-        <RadioButton
-          selected={this.state.skill}
-          onClick={this.skillRadioBtnHandle}
+          selected={this.state.service}
+          onClick={this.serviceRadioBtnHandle}
+          refit={refService}
         />
         <RadioButton
           selected={this.state.contact}
           onClick={this.contactRadioBtnHandle}
+          refit={refContact}
         />
       </div>
     );
   }
 }
+
 export default React.memo(RadioButtonGroup);

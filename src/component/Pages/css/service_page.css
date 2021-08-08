@@ -1,0 +1,120 @@
+.service-page {
+  margin-top: 100px;
+  width: 100%;
+  height: max-content;
+}
+
+.service-message {
+  width: 526px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.img-icon-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.img-icon-con {
+  padding: 3rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-message h1 {
+  font-size: 36px;
+}
+
+.service-message-btn {
+  background-color: black;
+  color: white;
+  padding: 2px 7px;
+  font-size: 24px;
+  width: max-content;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.service-message-pic {
+  padding: 50px 0px;
+}
+
+.h1 {
+  font-size: 36px;
+}
+
+.my-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.service-card {
+  display: flex;
+  justify-content: space-around;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.service-card .card {
+  min-width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0px;
+  border-radius: 5px;
+  border: 1.5px solid rgb(36, 36, 36);
+}
+.service-card .card p {
+  text-align: center;
+}
+.service-card .card .circle {
+  width: max-content;
+  padding: 30px 23px;
+  border: 1.5px solid rgb(36, 36, 36);
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.work-together {
+  margin-top: 100px;
+}
+@media screen and (max-width: 800px) {
+  .service-page {
+    padding: 0 4rem;
+  }
+  .h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+  .service-message {
+    font-size: 18px;
+    text-align: left;
+  }
+  .service-message-btn {
+    font-size: 18px;
+  }
+  .service-message-pic > img {
+    width: 200px;
+    height: 200px;
+  }
+  .service-card {
+    display: flex;
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+  .service-card > .card {
+    margin-right: 20px;
+  }
+  .img-icon-list {
+    flex-direction: row;
+    overflow-y: scroll;
+  }
+  .img-icon-con img {
+    margin-right: 2rem;
+  }
+}

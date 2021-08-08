@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: flex-end;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .barger-btn div {
@@ -23,6 +24,7 @@
 .bb-btn-open {
   align-items: center;
   transform: rotate(90deg);
+  transition: 0.2s;
 }
 
 .bb-btn-open div {

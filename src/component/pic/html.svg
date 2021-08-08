@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="65"
+   height="65"
+   viewBox="0 0 17.197917 17.197917"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <color-profile
+       name="sRGB"
+       xlink:href="file:///usr/share/color/icc/colord/sRGB.icc"
+       id="color-profile3133" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath135354">
+      <path
+         id="path135356"
+         style="opacity:1;vector-effect:none;fill:#ffffff;stroke-width:0.121859;stop-color:#000000;stop-opacity:1"
+         d="m 385.74177,111.17147 h 41.19862 c 4.12591,0 7.44746,3.32157 7.44746,7.44746 v 41.19862 c 0,4.12589 -3.32155,7.44746 -7.44746,7.44746 h -41.19862 c -4.12588,0 -7.44746,-3.32157 -7.44746,-7.44746 v -41.19862 c 0,-4.12589 3.32158,-7.44746 7.44746,-7.44746 z" />
+    </clipPath>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-15.702216,1.4081386)"
+     style="display:inline">
+    <g
+       id="g150300"
+       transform="matrix(0.26885823,3.1495755e-5,-3.1495755e-5,0.26885823,-30.421693,-13.189224)">
+      <path
+         id="rect150193"
+         style="opacity:1;vector-effect:none;fill:#ffffff;stroke-width:2.80691;stop-color:#000000;stop-opacity:1"
+         d="M 180.67622,54.778313 H 224.6107 V 95.616669 H 180.67622 Z" />
+      <path
+         fill="currentColor"
+         d="m 175.49675,47.733224 5.09812,49.557641 22.87568,6.535905 23.02177,-6.535905 5.09812,-49.557641 z m 45.02104,16.014201 h -26.849 l 0.59892,6.18532 h 25.65115 l -1.98663,18.58099 -14.30102,3.38063 v 0.0376 h -0.16066 l -14.41784,-3.4182 -0.87647,-9.49083 h 6.96793 l 0.51125,4.77046 7.81513,1.81552 7.84434,-1.81552 0.87646,-7.78799 h -24.38027 l -1.86981,-18.230431 h 35.21922 z"
+         id="path81006"
+         style="fill:#e34c26;fill-opacity:1;stroke-width:0.135241" />
+    </g>
+  </g>
+  <g
+     id="layer2" />
+</svg>

@@ -1,4 +1,203 @@
 .App {
   width: 100%;
-  height: 100%;
+  height: max-content;
+}
+
+.btn-rounded-dark {
+  background-color: black;
+  width: max-content;
+  height: max-content;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.btn-rounded-dark:hover,
+.btn-rounded-dark:focus {
+  box-shadow: 0 0 0px 4px rgb(98, 98, 98);
+}
+
+.items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jc-s-around {
+  justify-content: space-between;
+}
+
+.nav-section {
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 5rem;
+  background-color: white;
+  box-sizing: border-box;
+}
+.nav-bar {
+  list-style: none;
+  margin: 0;
+  display: none;
+  transition: 0.5s;
+}
+
+.nav-bar > .nav-bar-list {
+  font-size: 1.5rem;
+  margin: 0 2rem;
+  border-radius: 50px;
+  display: inline;
+  cursor: pointer;
+}
+.nav-bar-focus {
+  padding: 1rem 3rem;
+  color: white;
+  background-color: black;
+}
+
+.focus {
+  background-color: rgba(255, 0, 0, 0.383);
+}
+
+main {
+  z-index: 1;
+  padding: 0;
+}
+footer {
+  margin-top: 20px;
+  padding: 40px 0 !important;
+  z-index: 1;
+  text-align: center;
+  font-size: 1em;
+}
+
+.radio-gp {
+  position: fixed;
+  top: 40vh;
+  left: 5rem;
+}
+
+.i-title {
+  padding-left: 5rem;
+  font-size: 1rem;
+}
+
+.download-cv {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  margin-top: 2rem;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.download-cv > div {
+  font-size: 24px;
+}
+
+.download-cv > div > button,
+.btn-dark {
+  background-color: black;
+  width: max-content;
+  height: max-content;
+  font-family: sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  transition: 0.2s;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  margin: 0 1rem;
+  margin-right: 0;
+}
+.download-cv > div > button:hover,
+.download-cv > div > button:focus,
+.btn-dark:hover,
+.btn-dark:focus {
+  box-shadow: 0 0 0px 4px rgb(98, 98, 98);
+}
+
+@media screen and (max-width: 800px) {
+  .nav-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 4rem;
+  }
+  .nav-bar {
+    width: 100%;
+    padding: 60px 0;
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-bar-list {
+    display: block !important;
+    padding: 50px;
+    text-align: center;
+  }
+  .barger-pos {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+  }
+  .i-title {
+    padding-left: 4rem;
+  }
+  .radio-gp {
+    top: 60vh;
+    left: 4rem;
+    transform: translate(0, 0) scale(0.7);
+  }
+  .download-cv {
+    padding: 2.5rem 4rem !important;
+    flex-direction: column;
+  }
+  .download-cv > div {
+    margin: 10px 0;
+  }
+  .download-cv > div > button {
+    margin: 0 5px;
+  }
+  .download-cv > div > button:nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .nav-section {
+    padding: 1.5rem 1.5rem;
+  }
+  .i-title {
+    padding-left: 1.5rem;
+  }
+  .radio-gp {
+    top: 60vh;
+    left: 1.5rem;
+  }
+  .btn-rounded-dark {
+    font-size: 1rem;
+  }
+  .barger-pos {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  .download-cv {
+    padding: 2.5rem 1.5rem !important;
+  }
 }

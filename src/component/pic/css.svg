@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="65"
+   height="65"
+   viewBox="0 0 17.197917 17.197917"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <color-profile
+       name="sRGB"
+       xlink:href="file:///usr/share/color/icc/colord/sRGB.icc"
+       id="color-profile3439" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath135354">
+      <path
+         id="path135356"
+         style="opacity:1;vector-effect:none;fill:#ffffff;stroke-width:0.121859;stop-color:#000000;stop-opacity:1"
+         d="m 385.74177,111.17147 h 41.19862 c 4.12591,0 7.44746,3.32157 7.44746,7.44746 v 41.19862 c 0,4.12589 -3.32155,7.44746 -7.44746,7.44746 h -41.19862 c -4.12588,0 -7.44746,-3.32157 -7.44746,-7.44746 v -41.19862 c 0,-4.12589 3.32158,-7.44746 7.44746,-7.44746 z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath135712">
+      <path
+         id="path135714"
+         style="opacity:1;vector-effect:none;fill:#ffffff;stroke-width:3.7007;stop-color:#000000;stop-opacity:1"
+         d="m 286.07285,94.083963 h 56.09354 v 56.093547 h -56.09354 z" />
+    </clipPath>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-15.702216,1.4081386)"
+     style="display:inline">
+    <g
+       id="g149831"
+       transform="matrix(0.26885895,0.0013492,-0.0013492,0.26885895,-40.089596,-14.649336)">
+      <path
+         id="rect149692"
+         style="opacity:1;vector-effect:none;fill:#ffffff;stroke-width:3.60548;stop-color:#000000;stop-opacity:1"
+         d="m 211.71094,52.053204 h 56.0935 l -9.98952,46.73876 -31.6123,3.543246 z" />
+      <path
+         fill="currentColor"
+         d="m 211.71092,52.053203 5.09808,49.557647 22.94869,6.5359 22.94869,-6.5359 5.09808,-49.557646 z m 45.73669,10.01671 -0.70117,5.922382 -16.84267,6.17279 -0.0438,0.0125 h 16.28758 l -1.86979,18.35561 -14.34475,3.59349 -14.4324,-3.6561 -0.9349,-9.252929 h 7.14316 l 0.46745,4.7955 7.68365,1.66528 7.99041,-1.92822 0.54048,-7.71286 -24.29259,-0.0626 v -0.0125 l -0.0292,0.0125 -0.52588,-5.797169 16.37523,-5.84725 0.9495,-0.33807 h -17.95286 l -0.84724,-5.922372 z"
+         id="path80997"
+         style="fill:#1572b6;fill-opacity:1;stroke-width:0.135241" />
+    </g>
+  </g>
+  <g
+     id="layer2" />
+</svg>

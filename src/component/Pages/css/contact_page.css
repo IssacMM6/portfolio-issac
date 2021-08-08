@@ -1,0 +1,129 @@
+.contact-con {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+}
+
+.contact-con .form-con {
+  max-width: 550px;
+  margin-right: 50px;
+  border-right: 1.3px solid rgb(92, 92, 92);
+}
+.contact-con .form-con .service-message {
+  width: 100%;
+}
+.contact-con .media-con {
+  width: max-content;
+}
+
+.media-con > .service-message {
+  width: 100%;
+}
+
+.color-danger {
+  color: red;
+}
+.ml-0 {
+  margin-left: 0;
+}
+
+.form-input {
+  width: 100%;
+  padding-right: 50px;
+}
+
+.form-input > label,
+.form-input > input,
+.form-input > textarea {
+  margin: 20px 0;
+  font-size: 24px;
+  width: 100%;
+  border: none;
+}
+.form-input > label,
+.form-input > input {
+  transition: 0.2s;
+  transition-timing-function: ease-in;
+  height: 50px;
+}
+.form-input > textarea {
+  resize: none;
+  height: 150px;
+  padding-top: 20px;
+}
+
+.form-input > input,
+.form-input > textarea {
+  outline: 1.3px solid rgb(167, 167, 167);
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+.form-input > input:hover,
+.form-input > textarea:hover {
+  outline: 1.3px solid rgb(167, 167, 167);
+  padding-left: 20px;
+  box-shadow: 0 0 0 4px rgb(219, 219, 219);
+}
+
+.form-input > input:focus,
+.form-input > textarea:focus {
+  outline: 1.3px solid rgb(0, 0, 0);
+  padding-left: 20px;
+  box-shadow: 0 0 0 4px rgb(112, 112, 112);
+}
+
+.form-input > button {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.link-dark {
+  text-decoration: none;
+  color: black;
+  display: block;
+  width: max-content;
+}
+.un-line:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-con {
+    padding: 0 9rem;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-con .form-con {
+    max-width: none;
+    width: 100%;
+    margin-right: 0px;
+    border-right: none;
+  }
+  .contact-con .media-con {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .form-input {
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .form-input > label {
+    font-size: 18px;
+  }
+  .form-con input,
+  .form-input textarea {
+    font-size: 18px !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .contact-con {
+    padding: 0 4rem;
+  }
+}
