@@ -114,7 +114,13 @@
     flex-direction: row;
     overflow-y: scroll;
   }
+  .img-icon-con {
+    justify-content: flex-start;
+  }
   .img-icon-con img {
     margin-right: 2rem;
+  }
+  .work-together {
+    text-align: center;
   }
 }

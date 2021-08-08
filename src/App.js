@@ -6,6 +6,7 @@ import BargerButton from "./component/custom_button/barger_btn";
 import RadioButtonGroup from "./component/custom_button/radio_btn_group";
 import ServicePage from "./component/Pages/service_page";
 import ContactPage from "./component/Pages/contact_page";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   const [bargerClick, setBargerClick] = React.useState(false);
@@ -16,69 +17,73 @@ function App() {
   const contactRef = React.useRef();
   return (
     <div className="App">
-      <nav className="items-center jc-s-around nav-section">
-        <LogoButton />
-        <ul className="nav-bar fn-poppins-semi-b" ref={bargarMenu}>
-          <li
-            className="nav-bar-list"
-            onClick={() => {
-              homeRef.current.click();
-              bargarMenu.current.style.display = "none";
-              setBargerClick(false);
+      <Router>
+        <nav className="items-center jc-s-around nav-section">
+          <LogoButton />
+          <ul className="nav-bar fn-poppins-semi-b" ref={bargarMenu}>
+            <li
+              className="nav-bar-list"
+              onClick={() => {
+                homeRef.current.click();
+                bargarMenu.current.style.display = "none";
+                setBargerClick(false);
+              }}
+            >
+              <Link to="/">Home</Link>
+            </li>
+            <li
+              className="nav-bar-list"
+              onClick={() => {
+                serviceRef.current.click();
+                bargarMenu.current.style.display = "none";
+                setBargerClick(false);
+              }}
+            >
+              <Link to="/about">About</Link>
+            </li>
+            <li
+              className="nav-bar-list"
+              onClick={() => {
+                contactRef.current.click();
+                bargarMenu.current.style.display = "none";
+                setBargerClick(false);
+              }}
+            >
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+          <BargerButton
+            cName="barger-pos"
+            selected={bargerClick}
+            onClick={(s) => {
+              if (s === true) bargarMenu.current.style.display = "flex";
+              if (s === false) bargarMenu.current.style.display = "none";
+              setBargerClick(s);
             }}
-          >
-            Home
-          </li>
-          <li
-            className="nav-bar-list"
-            onClick={() => {
-              serviceRef.current.click();
-              bargarMenu.current.style.display = "none";
-              setBargerClick(false);
-            }}
-          >
-            Service
-          </li>
-          <li
-            className="nav-bar-list"
-            onClick={() => {
-              contactRef.current.click();
-              bargarMenu.current.style.display = "none";
-              setBargerClick(false);
-            }}
-          >
-            Contact
-          </li>
-        </ul>
-        <BargerButton
-          cName="barger-pos"
-          selected={bargerClick}
-          onClick={(s) => {
-            if (s === true) bargarMenu.current.style.display = "flex";
-            if (s === false) bargarMenu.current.style.display = "none";
-            setBargerClick(s);
-          }}
+          />
+        </nav>
+        <div className="i-title fn-poret-one ">
+          {page === 0 ? <div>Home / Wellcome</div> : null}
+          {page === 1 ? <div>Home / Service</div> : null}
+          {page === 2 ? <div>Home / Contact</div> : null}
+        </div>
+        <OpenCV />
+        <RadioButtonGroup
+          cName="radio-gp"
+          currentTarget={(t) => setPage(t)}
+          refHome={homeRef}
+          refService={serviceRef}
+          refContact={contactRef}
         />
-      </nav>
-      <div className="i-title fn-poret-one ">
-        {page === 0 ? <div>Home / Wellcome</div> : null}
-        {page === 1 ? <div>Home / Service</div> : null}
-        {page === 2 ? <div>Home / Contact</div> : null}
-      </div>
-      <OpenCV />
-      <RadioButtonGroup
-        cName="radio-gp"
-        currentTarget={(t) => setPage(t)}
-        refHome={homeRef}
-        refService={serviceRef}
-        refContact={contactRef}
-      />
-      <main>
-        <LandingPage />
-        {/* <ServicePage /> */}
-        {/* <ContactPage /> */}
-      </main>
-      <footer>PORTFOLIO BY ISSAC</footer>
+        <main>
+          <Switch>
+            <Route path="/" exact component={LandingPage} />
+            <Route path="/about" component={ServicePage} />
+            <Route path="/contact" component={ContactPage} />
+          </Switch>
+        </main>
+        <footer>PORTFOLIO BY ISSAC</footer>
+      </Router>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/landing_page.css";
 import PointingUpIllustration from "../pic/pointing_up.svg";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   return (
@@ -19,7 +20,9 @@ function LandingPage() {
       </div>
       <div className="items-center service-button-section">
         <button className="btn-rounded-dark fn-poppins-semi-b" type="button">
-          See Service
+          <Link to="/about" style={{ textDecoration: "none", color: "white" }}>
+            See Service
+          </Link>
         </button>
       </div>
       <div className="items-center pointer-img-section">
@@ -34,4 +37,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default React.memo(LandingPage);
