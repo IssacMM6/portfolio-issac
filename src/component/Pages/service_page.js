@@ -53,7 +53,7 @@ function ServicePage() {
           <span className="fn-poppins-semi-b h1">Services, To My Client</span>
           <br />
           <br />
-          These're services, I can offer to my client.
+          These are services, I can offer to my client.
         </p>
       </div>
       <div className="service-card">
@@ -90,7 +90,7 @@ function ServicePage() {
           <span className="fn-poppins-semi-b h1">THINGS I CAN DO</span>
           <br />
           <br />
-          These're the teachnology I use to build a website and there is more.
+          These are the teachnology I use to build a website and there is more.
         </p>
       </div>
       <div className="items-center service-message-pic">
@@ -116,8 +116,8 @@ function ServicePage() {
       </div>
       <div className="items-center">
         <p className="fn-poppins-r service-message">
-          For the backend developement, I use Mysql, MongoDB, Nodejs,
-          Javascript, Typescript, Jquery and other backend libaray.
+          For the backend development, I use MySQL, MongoDB, Node js,
+          Javascript, Typescript, Jquery and other backend library.
         </p>
       </div>
       <div className="img-icon-list">
@@ -148,14 +148,13 @@ function ServicePage() {
         </p>
       </div>
       <div className="items-center" style={{ marginBottom: "100px" }}>
-        <button className="btn-dark">
-          <Link
-            to="/contact"
-            style={{ textDecoration: "none", color: "white" }}
-          >
-            Contact Me
-          </Link>
-        </button>
+        <Link
+          to="/contact"
+          className="btn-dark"
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          Contact Me
+        </Link>
       </div>
     </div>
   );

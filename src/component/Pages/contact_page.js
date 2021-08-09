@@ -23,10 +23,10 @@ function ContactPage() {
     if (flag === true) {
       emailjs
         .sendForm(
-          process.env.REACT_APP_EMAILJS_SERVICE_ID,
-          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+          "service_wnx3dkg",
+          "template_ykq31u3",
           e.target,
-          process.env.REACT_APP_EMAILJS_USER_ID
+          "user_dVq8XpPp5RGPAwaXVSLiu"
         )
         .then(
           (result) => {
