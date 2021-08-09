@@ -6,7 +6,7 @@ function ContactPage() {
   const [nameInput, setNameInput] = React.useState("");
   const [commentInput, setCommentInput] = React.useState("");
   const [assessCode, setAssessCode] = React.useState(0);
-
+  const [clientInput, setClientInput] = React.useState("");
   function sendEmail(e) {
     e.preventDefault();
     let flag = true;
@@ -32,6 +32,9 @@ function ContactPage() {
           (result) => {
             setAssessCode(1);
             console.log(result.text);
+            setClientInput("");
+            setNameInput("");
+            setCommentInput("");
           },
           (e) => {
             console.log(e.text);
@@ -65,6 +68,19 @@ function ContactPage() {
               setNameInput(e.target.value);
             }}
             value={nameInput}
+          />
+          <br />
+          <label>
+            Email <span className="color-danger">*</span>
+          </label>
+          <br />
+          <input
+            name="client_mail"
+            placeholder="Your  Email..."
+            onChange={(e) => {
+              setClientInput(e.target.value);
+            }}
+            value={clientInput}
           />
           <br />
           <label>
