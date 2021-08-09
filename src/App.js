@@ -63,7 +63,7 @@ function App() {
           />
         </nav>
         <div className="i-title fn-poret-one ">
-          {page === 0 ? <div>Home / Wellcome</div> : null}
+          {page === 0 ? <div>Home / Welcome</div> : null}
           {page === 1 ? <div>Home / Services</div> : null}
           {page === 2 ? <div>Home / Contact</div> : null}
         </div>
