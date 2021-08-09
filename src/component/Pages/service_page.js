@@ -14,9 +14,9 @@ function ServicePage() {
             Hi there, My name is Issac.
           </span>
           <br />
-          <br />I built a beautiful website, hand-crafted website and I love to
-          do it for you. I always communicate with my client and make a Website
-          based on what the client wanted. You can talk friendly with me,{" "}
+          <br />I built beautiful websites, hand-crafted websites and I love to
+          do it for you. I always communicate with my clients and make websites
+          based on what the clients want. You can talk with me,{" "}
           <span
             className="service-message-btn"
             ref={moreMessageRef}
@@ -28,7 +28,7 @@ function ServicePage() {
             +more
           </span>
           <span ref={lessMessageRef} style={{ display: "none" }}>
-            send a message or email any times and I will reply to you as soon as
+            send a message or email anytimes and I will reply to you as soon as
             possible ;)
             <span
               className="service-message-btn"
@@ -50,10 +50,10 @@ function ServicePage() {
       </div>
       <div className="items-center">
         <p className="fn-poppins-r service-message">
-          <span className="fn-poppins-semi-b h1">Services, To My Client</span>
+          <span className="fn-poppins-semi-b h1">Services For My Clients</span>
           <br />
           <br />
-          These are services, I can offer to my client.
+          These are services I can offer to my clients.
         </p>
       </div>
       <div className="service-card">
@@ -74,8 +74,8 @@ function ServicePage() {
         <div className="card">
           <div className="circle fn-poppins-r">100%</div>
           <p className="fn-poppins-r">
-            Refresh <br />
-            Webdesign
+            Fresh <br />
+            Web Designs
           </p>
         </div>
       </div>
@@ -90,7 +90,7 @@ function ServicePage() {
           <span className="fn-poppins-semi-b h1">THINGS I CAN DO</span>
           <br />
           <br />
-          These are the teachnology I use to build a website and there is more.
+          These are the technologies I use to build websites and there is more.
         </p>
       </div>
       <div className="items-center service-message-pic">
@@ -99,8 +99,8 @@ function ServicePage() {
 
       <div className="items-center">
         <p className="fn-poppins-r service-message">
-          For the frontend developement, I use Bootstrap, React, Sass, HTML, Css
-          and other frontend libaray.
+          For the frontend development, I use Bootstrap, React, Sass, HTML, Css
+          and other frontend library.
         </p>
       </div>
       <div className="img-icon-list">
@@ -130,8 +130,8 @@ function ServicePage() {
       <div className="items-center">
         <p className="fn-poppins-r service-message">
           I also draw vector Illustration and use figma to prototype webpages.
-          Adobe Illustrator, Adobe Photoshop and Inkscape are my mostly use
-          software to draw a vector graphic.
+          Adobe Illustrator, Adobe Photoshop and Inkscape are my most used
+          software to draw vector graphics.
         </p>
       </div>
       <div className="img-icon-list">
@@ -143,7 +143,7 @@ function ServicePage() {
       </div>
       <div className="items-center">
         <p className="fn-poppins-r work-together">
-          <span className="fn-poppins-semi-b h1">Let's Work Together</span>
+          <span className="fn-poppins-semi-b h1">Let's Work Together!</span>
           <br />
         </p>
       </div>
