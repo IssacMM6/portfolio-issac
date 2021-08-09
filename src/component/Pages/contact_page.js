@@ -1,7 +1,45 @@
 import React from "react";
 import "./css/contact_page.css";
+import emailjs from "emailjs-com";
 
 function ContactPage() {
+  const [nameInput, setNameInput] = React.useState("");
+  const [commentInput, setCommentInput] = React.useState("");
+  const [assessCode, setAssessCode] = React.useState(0);
+
+  function sendEmail(e) {
+    e.preventDefault();
+    let flag = true;
+
+    if (nameInput === "") {
+      flag = false;
+      setAssessCode(3);
+    }
+    if (commentInput === "") {
+      flag = false;
+      setAssessCode(3);
+    }
+
+    if (flag === true) {
+      emailjs
+        .sendForm(
+          process.env.EMAILJS_SERVICE_ID,
+          process.env.EMAILJS_TEMPLATE_ID,
+          e.target,
+          process.env.EMAILJS_USER_ID
+        )
+        .then(
+          (result) => {
+            setAssessCode(1);
+            console.log(result.text);
+          },
+          (e) => {
+            console.log(e.text);
+          }
+        );
+      flag = false;
+    }
+  }
   return (
     <div className="contact-con">
       <div className="form-con">
@@ -12,37 +50,52 @@ function ContactPage() {
           <span className="fn-poppins-semi-b h1">Send Email</span>
           <br />
           <br />
-          Feel free to send me a message , Fill the input and send me :
+          Feel free to send me a message , Fill the input and send me : <br />(
+          <span className="color-danger"> *</span> = input required)
         </p>
-        <div className="form-input fn-poppins-r">
+        <form className="form-input fn-poppins-r" onSubmit={sendEmail}>
           <label>
             Name <span className="color-danger">*</span>
           </label>
           <br />
-          <input />
-          <br />
-          <label>
-            Email <span className="color-danger">*</span>
-          </label>
-          <br />
-          <input />
-          <br />
-          <label>
-            Subject <span className="color-danger">*</span>
-          </label>
-          <br />
-          <input />
+          <input
+            name="from_name"
+            placeholder="Your name..."
+            onChange={(e) => {
+              setNameInput(e.target.value);
+            }}
+            value={nameInput}
+          />
           <br />
           <label>
             Comment <span className="color-danger">*</span>
           </label>
           <br />
-          <textarea />
+          <textarea
+            placeholder="Write your comment...."
+            onChange={(e) => {
+              setCommentInput(e.target.value);
+            }}
+            value={commentInput}
+            name="message"
+          />
           <br />
-          <button className="fn-poppins-semi-b btn-dark ml-0">
-            Send Email
+
+          <button
+            type="submit"
+            className="fn-poppins-semi-b btn-dark ml-0"
+            onMouseLeave={() => {
+              setAssessCode(0);
+            }}
+            onClick={() => {}}
+          >
+            {assessCode === 0
+              ? "Send Email"
+              : assessCode === 1
+              ? "Email Sended"
+              : "Input Required"}
           </button>
-        </div>
+        </form>
       </div>
       <div className="media-con">
         <p
@@ -55,47 +108,41 @@ function ContactPage() {
           You can follow me , By clicking the link :
           <br />
           <br />
-          <a
-            href="https://www.facebook.com/profile.php?id=100054497664282"
+          <button
             className="link-dark un-line"
+            onClick={() => {
+              window.open(
+                "https://www.facebook.com/profile.php?id=100054497664282",
+                "_blank"
+              );
+            }}
           >
             . Facebook
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=100054497664282"
+          </button>
+          <button
             className="link-dark un-line"
-          >
-            . Instragram
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=100054497664282"
-            className="link-dark un-line"
+            onClick={() => {
+              window.open(
+                "https://discord.com/channels/@me/727467527134904411",
+                "_blank"
+              );
+            }}
           >
             . Discord
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=100054497664282"
+          </button>
+          <button
             className="link-dark un-line"
-          >
-            . LinkIn
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=100054497664282"
-            className="link-dark un-line"
+            onClick={() => {
+              window.open("https://github.com/IssacMM6", "_blank");
+            }}
           >
             . GitHub
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=100054497664282"
-            className="link-dark un-line"
-          >
-            . Pinterest
-          </a>
+          </button>
           <br />
           Email & Phone Number :<br />
           <br />
-          sawissac72@gmail.com <br />
-          (+9)250424923
+          issacmm64@gmail.com <br />
+          (+95) 9250424923
           <br />
           <br />
         </p>

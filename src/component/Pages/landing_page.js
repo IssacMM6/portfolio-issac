@@ -15,13 +15,13 @@ function LandingPage() {
           <br />
           Frontend & Backend
           <br />
-          Webdesign
+          Web Design
         </p>
       </div>
       <div className="items-center service-button-section">
         <button className="btn-rounded-dark fn-poppins-semi-b" type="button">
           <Link to="/about" style={{ textDecoration: "none", color: "white" }}>
-            See Service
+            See Services
           </Link>
         </button>
       </div>

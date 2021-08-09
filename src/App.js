@@ -39,7 +39,7 @@ function App() {
                 setBargerClick(false);
               }}
             >
-              <Link to="/about">About</Link>
+              <Link to="/about">Services</Link>
             </li>
             <li
               className="nav-bar-list"
@@ -64,7 +64,7 @@ function App() {
         </nav>
         <div className="i-title fn-poret-one ">
           {page === 0 ? <div>Home / Wellcome</div> : null}
-          {page === 1 ? <div>Home / Service</div> : null}
+          {page === 1 ? <div>Home / Services</div> : null}
           {page === 2 ? <div>Home / Contact</div> : null}
         </div>
         <OpenCV />
@@ -98,7 +98,17 @@ function OpenCV() {
       {openCV === true ? <div>Download CV</div> : <div></div>}
       <div>
         {openCV === true ? (
-          <button className="fn-poppins-semi-b">Download</button>
+          <button
+            className="fn-poppins-semi-b"
+            onClick={() => {
+              window.open(
+                "https://drive.google.com/file/d/1FDA0h2FizuE5SUyvcSIjVFZu1_jCT514/view?usp=sharing",
+                "_blank"
+              );
+            }}
+          >
+            Download
+          </button>
         ) : null}
         <button
           type="button"

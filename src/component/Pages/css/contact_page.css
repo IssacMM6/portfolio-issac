@@ -20,6 +20,13 @@
 .media-con > .service-message {
   width: 100%;
 }
+.media-con > p > button {
+  font-size: 24px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  background-color: white;
+}
 
 .color-danger {
   color: red;
@@ -119,6 +126,9 @@
   .form-con input,
   .form-input textarea {
     font-size: 18px !important;
+  }
+  .media-con > p > button {
+    font-size: 18px;
   }
 }
 

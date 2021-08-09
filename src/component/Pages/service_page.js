@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/service_page.css";
 import { SVGPIC } from "../pic/svg_pic";
+import { Link } from "react-router-dom";
 
 function ServicePage() {
   let moreMessageRef = React.useRef();
@@ -10,12 +11,12 @@ function ServicePage() {
       <div className="items-center">
         <p className="fn-poppins-r service-message">
           <span className="fn-poppins-semi-b h1">
-            HI There, My name is Issac.
+            Hi there, My name is Issac.
           </span>
           <br />
-          <br />I build beautiful website, hand-crafted website and I did love
-          to do it for you. I always communicate with my client and makes a
-          website base on the client wanted. You can talk friendly with me,{" "}
+          <br />I built a beautiful website, hand-crafted website and I love to
+          do it for you. I always communicate with my client and make a Website
+          based on what the client wanted. You can talk friendly with me,{" "}
           <span
             className="service-message-btn"
             ref={moreMessageRef}
@@ -147,7 +148,14 @@ function ServicePage() {
         </p>
       </div>
       <div className="items-center" style={{ marginBottom: "100px" }}>
-        <button className="btn-dark">Contact Me</button>
+        <button className="btn-dark">
+          <Link
+            to="/contact"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Contact Me
+          </Link>
+        </button>
       </div>
     </div>
   );
